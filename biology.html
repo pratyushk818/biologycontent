@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Inter&family=Poppins:wght@700;700&family=Roboto:wght@500;700&display=swap');
+
+*
+{
+    font-family: 'poppins';
+    scroll-behavior: smooth;
+}
+        .h1 {
+            height: 60px;
+            right: 0px;
+            left: 0px;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 13px -3px rgba(128, 128, 128, 0.304);
+            position:fixed;
+            left:0;
+            right:0;
+            top:0;
+            z-index: 30;
+            background-color: #ffffff;
+            
+        }
+
+        .bdy {
+            z-index: 1;
+            height: 600px;
+            position: absolute;
+            top:65px;
+            left: 0px;
+            right: 0px;
+        }
+        .lftmrgn
+        {
+            background-color: rgba(240, 240, 240, 0.646);
+            width:250px;
+            display:flex;
+            align-items: left;
+            flex-direction: column;
+            height:100vh;
+            z-index: 2;
+            position:fixed;
+           
+        }
+        .lftmrgn ul li
+        {
+         margin-bottom: 30px;
+         list-style-type: none;
+         margin-left: -10px;
+         font-weight: 300;
+        
+        }
+        .cntnt
+        {
+            position:relative;;
+            top:5px;
+            display:block;
+            width:820px;
+            left:270px;
+            font-weight: 500;
+            z-index: 1;
+        }
+        #logo
+        {
+            height:300px;
+            width:300px;
+            position:relative;
+            top:-100px;
+            left:42%;
+            
+        }
+        #subsc
+        {
+            background-color: rgb(216, 216, 216);
+            padding:10px;
+            position:relative;
+            left:-30px;
+            width:230px;
+            top:-10px;
+            display: flex;
+            font-weight: 600;
+            font-size: 20px;
+            justify-content: center;
+            background-color: #2c7da0;
+            color:rgb(252, 231, 42);
+        }
+        #boom
+        {
+            animation: boom 1.5s ease-out infinite;
+            font-size: 30px;
+            position:relative;
+            top:-5px;
+            
+        }
+        @keyframes boom {
+            0%{
+                transform:rotate(0deg);
+            }
+            100%
+            {
+                transform: rotate(360deg);
+            }
+         
+        }
+        a{
+            text-decoration: none;
+            color:black;
+        }
+        #frstpic
+        {
+            width:800px;
+            float:top;
+            height:600px;
+        }
+        .lftmrgn a:hover
+        {
+            color:rgb(108, 108, 108);
+        }
+        #scndlst
+        {
+            color:#2d2d2d;
+            
+        }
+        .hdng1
+        {
+            font-weight: 600;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .sec2 img 
+        {
+            margin-top: 25px;
+            width:800px;
+        }
+        @media screen and (max-width:480px) {
+            .lftmrgn
+        {
+            background-color: rgba(240, 240, 240, 0.646);
+            width:150px;
+            display:flex;
+            align-items: left;
+            flex-direction: column;
+            height:100vh;
+            z-index: 2;
+            position:fixed;
+            backface-visibility: hidden;
+            background: transparent;
+           
+        }
+        .lftmrgn ul li
+        {
+         margin-bottom: 30px;
+         list-style-type: none;
+         margin-left: -10px;
+         font-weight: 300;
+         color:transparent;
+        
+        }
+        #subsc
+        {
+            background-color: rgb(216, 216, 216);
+            padding:10px;
+            position:relative;
+            left:-30px;
+            width:130px;
+            top:-10px;
+            display: flex;
+            font-weight: 600;
+            font-size: 15px;
+            justify-content: center;
+            background-color: #2c7da0;
+            color:rgb(252, 231, 42);
+            color:transparent;
+            background: transparent;
+        }
+        .h1 {
+            height: 60px;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 13px -3px rgba(128, 128, 128, 0.304);
+            position:fixed;
+            left:0;
+            right:0;
+            top:0;
+            z-index: 30;
+            background-color: #ffffff;
+            width:100vw;
+            
+        }
+        .cntnt
+        {
+            position:relative;;
+            top:5px;
+            display:block;
+            width:360px;
+            left:20px;
+            font-weight: 500;
+            z-index: 1;
+        }
+        .sec2 img 
+        {
+            margin-top: 25px;
+            width:300px;
+        }
+        #frstpic
+        {
+            width:370px;
+            float:bottom;
+            
+        }
+        #logo
+        {
+            height:300px;
+            width:300px;
+            position:relative;
+            top:-103px;
+            left:13%;
+            
+        }
+        button{
+            position: absolute;
+            top:16px;
+            right:25px;
+            text-decoration: none;
+            color:rgb(252, 231, 42);
+            background-color:#2c7da0;
+            padding: 5px;
+            border-radius: 8px;
+            font-weight:600;
+            width:65px;
+            transition: color 0.3s ease;
+            font-size: 13px;
+            border:0px;
+        }
+        }
+
+        @media screen and (max-width:368px) {
+            
+        .h1 {
+            height: 60px;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 13px -3px rgba(128, 128, 128, 0.304);
+            position:fixed;
+            left:0;
+            right:0;
+            top:0;
+            z-index: 30;
+            background-color: #ffffff;
+            width:100vw;
+            
+        }
+        .cntnt
+        {
+            position:relative;;
+            top:5px;
+            display:block;
+            width:330px;
+            left:20px;
+            font-weight: 500;
+            z-index: 1;
+        }
+        .sec2 img 
+        {
+            margin-top: 25px;
+            width:300px;
+        }
+        #frstpic
+        {
+            width:330px;
+            float:bottom;
+            
+        }
+        #logo
+        {
+            height:300px;
+            width:300px;
+            position:relative;
+            top:-103px;
+            left:11%;
+            
+        }
+        button{
+            position: absolute;
+            top:16px;
+            right:15px;
+            text-decoration: none;
+            color:rgb(252, 231, 42);
+            background-color:#2c7da0;
+            padding: 5px;
+            border-radius: 8px;
+            font-weight:600;
+            width:60px;
+            transition: color 0.3s ease;
+            font-size: 12px;
+            border:0px;
+        }
+        
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="h1"><img src="LearNexus-removebg-preview.png" alt="logo" id="logo"> </div>
+   
+    <div class="bdy">
+        <div class="lftmrgn">
+            <ul>
+               <a href="#"><li id="subsc"> Susbcribe Now <span id="boom">💥</span> </li> </a>
+               <a href="#"><li >Biochemistry</li></a>
+               <a href="#"><li >Molecular biology</li></a>
+               <a href="#"><li >Cell biology</li></a>
+               <a href="#"><li >Genetics</li></a>
+               <a href="#"><li >Microbiology</li></a>
+               <a href="#"><li >Botany</li></a>
+               <a href="#"><li >Zoology</li></a>
+               <a href="#"><li >Physiology</li></a>
+               <a href="#"><li >Ecology</li></a>
+               <a href="#"><li >Evolutionary biology</li></a>
+            </ul>
+        </div>
+
+      <div class="cntnt"> Biology is the scientific study of life. It is a natural science with a broad scope but has several unifying themes that tie it together as a single, coherent field. Biology encompasses the study of all living organisms, from the smallest bacteria to the largest whales, and the interactions between these organisms and their environment.
+
+    This field includes the Anatomy, Physiology, Ecology, and Morphology of living organisms. The definition of biology includes the relationship between plants, animals, microorganisms, and their relation to the environment.
+
+
+    <img src="https://thumbs.dreamstime.com/b/biology-science-theory-doodle-handwriting-tool-model-icon-white-paper-background-used-school-education-document-64829033.jpg" alt="" id="frstpic">
+    <br>
+
+    <span style="text-align: center; display:flex; align-items: center; justify-content: center; font-size: 30px;font-weight: 500; color:#2c7da0">What is Biology?</span>
+    Biology is the story of how life unfurled on the Earth. It is the branch of science that deals with life forms and life processes. In earlier times, Biology was only limited to the knowledge of the human body and its function as it formed the basis for medical practice. Fundamental issues regarding how life originated, growth of the biodiversity, and the evolution of living creatures according to different habitats intrigued the biologists.
+
+The term “Biology” in Greek is divided into two parts – bios = life; logos = study, which translates into study of life. Biology is a part of Science, along with Physics and Chemistry. These days Biology is commonly referred to as “Life Sciences”.
+    
+    
+<br>
+
+
+<span style="text-align: center; display:flex; align-items: center; justify-content: center; font-size: 30px;font-weight: 500; color:#2c7da0">Importance of Biology</span>
+The study of biology has helped humans advance very far in their field. Few of the examples are given below:
+<ul>
+    <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Medicine:</span></a> The basis of contemporary medicine is biology. Scientists have been able to enhance surgical techniques, produce  new vaccinations to prevent diseases, and find novel treatments for diseases by knowing how the human body functions.</li></a>
+
+    <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Agriculture:</span></a> Developing innovative agricultural technology to increase food production and enhance the quality of our food  supply requires a strong understanding of biology.</li></a>
+
+    <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Protection of the environment:</span></a> Understanding and safeguarding the environment depend on biology.Biologists research how  organisms interact with their surroundings and create plans to save threatened species and ecosystems.</li></a>
+</ul>
+<span style="text-align: center; display:flex; align-items: center; justify-content: center; font-size: 30px;font-weight: 500; color:#2c7da0">Branches of Biology</span>
+Various concepts are studied in the field of Physics. Physics is divided into categories based on the topics studied in those subfields. 
+<ul >
+    <li id="scndlst">Biochemistry</li>
+    <li id="scndlst">Molecular biology</li>
+    <li id="scndlst">Cell biology</li>
+    <li id="scndlst">Genetics</li>
+    <li id="scndlst">Microbiology</li>
+    <li id="scndlst">Botany</li>
+    <li id="scndlst">Zoology</li>
+    <li id="scndlst">Physiology</li>
+    <li id="scndlst">Ecology</li>
+    <li id="scndlst">Evolutionary biology</li>
+</ul> 
+ 
+<br>
+    <!-- section 2-->
+        <ul>
+            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Biochemistry:</span></a>The word “Biochemistry’ was coined by the German chemist Carl Neuberg in 1930. Biological chemistry, often known as biochemistry, is a laboratory-based branch of Biology that combines biology and chemistry. It explores chemical processes that occur in and around living organisms and gives rise to the complexity of life.
+            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Molecular Biology:</span></a>Molecular Biology is the key to solving the working of the biological processes in our body. The term “Molecular Biology” refers to the ‘molecular’ part of the biological world. Starting from cells, right up to organ systems, all biological entities are studied under molecular biology. In this article, we will study what molecular biology is, Important topics in molecular biology, The role of a molecular biologist, different molecular biology techniques, and careers in molecular biology.</li></a>
+            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Cell Biology:</span></a>Cell Biology is the branch of Biology that includes the study of Cells known as structural and functional units of life. Cells are the smallest entities responsible for living beings’ characteristics. Cell biology encompasses the study of prokaryotic and eukaryotic cells, including the study of bacteria and animals. The study of many aspects of Cell behavior, structure, and function is covered in this article on the discipline of Cell biology.</li></a>
+            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Genetics:</span></a> Genetics is the study of genes, genetic variation, and transmission of traits in organisms. In the 19th century, Gregor Mendel was the first to study genetics scientifically. Mendel observed pea plants to study trait inheritance and gave three fundamental laws of inheritance: the Law of Dominance, the Law of Segregation, and the Law of Independent Assortment. Genetics helps us to diagnose and treat various genetic diseases, improve crop yields, and contribute to our understanding of evolution.</li></a>
+            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Microbiology:</span></a>Microbiology as the name suggests micro means tiny entities, and biology means the study of living organisms. In simpler terms, microbiology means the study of small living things that we can’t see with the naked eye. This field helps us understand how these microorganisms function, their roles in nature, and their impact on our health. From the bacteria in yogurt to the viruses causing illnesses, microbiology plays a major role in shaping our lives by studying all about the microorganisms. It delves into their structure, function, behavior, and interactions with the environment.
+
+                This field plays a major role in fields like medicine, agriculture, and environmental science. Microorganisms have also played a key role in the evolution of Earth and other organisms. The most useful instrument for studying these microorganisms is called a microscopy. Examples of these microscopic organisms are bacteria, viruses, fungi, algae, and protozoa.</li></a>
+            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Botany:</span></a> Botany is the branch of biology that deals with the study of plants. Botany helps us to understand plant structure, function, and aspects of plants. Botany is the study of the structure, development, reproduction, and growth of plants and plant-like organisms. The people who study botany are known as Botanists. The study of botany has its importance in many fields like Agriculture, Medicine, Horticulture, etc. Botany is further specialized into fields that deal with different aspects of plants such as Taxonomy, which is related to the classification of plants, Ecology which is all about how a plant interacts with its environment and so on.</li></a>
+            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Zoology:</span></a>Zoology can be easily defined as the study of animals. Zoology includes all the members of the kingdom Animalia. Zoology encompasses the study of the classification, anatomy, physiology, behavior, and ecology of animals. Zoology explores all the details of the diverse animal kingdom, from invertebrates to vertebrates. The study of zoology significantly contributes to the understanding of the animal diversity. The study of zoology also provides a wide range of career options other than the vast amount of knowledge about the animals around us. </li></a>
+            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Physiology:</span></a> Physiology is the fascinating study of how living organisms function and maintain life. Physiology explores the intricate mechanisms that keep our bodies ticking. Delving into the diverse world of physiology reveals the intricate ballet of cells, organs, and organ systems working seamlessly to sustain life. The study of physiology is vast and diverse it is further divided into multiple subparts. One such sub-part of physiology is human physiology which is the study of how the human body functions and maintains life.
+
+                Human physiology helps us to study and understand all the complex mechanisms of the human body that keep us alive. With the help of human physiology, we can explore the secrets of our body to ensure that we can function well throughout our natural lifetime and our body can cope with the impact of various diseases and disorders.</li></a>
+            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Ecology:</span></a>Ecology is the study of the interactions between different species and their surroundings. The Greek terms “Oikos” and “Logos” (which translate to “home, habitat, or place of residence) are the roots of the English word “ecology.” German zoologist Ernst Haeckel first used the word “ecology” in 1866. All living things and their surroundings are interconnected. They have a variety of effects on one another. The environment has a significant influence on the life cycles of many organisms that inhabit it. Living things modify how they function in response to environmental changes. These kinds of linkages between species and their interactions with the natural world are the subject of ecology.</li></a>
+            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Evolutionary biology:</span></a> Evolutionary biology is a biological process in which inherited traits of any individual or population start transforming or shifting from one generation to another. Evolution occurs through genetic drift and natural selection which causes evolutionary changes. These evolutionary changes can be prevalent in populations. To explain why organisms are suited to their physical and biological surroundings, Charles Darwin and Alfred Russel Wallace separately developed the idea of evolution by natural selection in the middle of the 19th century.</li></a>
+        </ul>
+    </div>
+
+</div>
+    </div>
+</body>
+
+</html>
